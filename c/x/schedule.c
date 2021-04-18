@@ -6,6 +6,7 @@
 int main(int argc,char argv[]){
     pid_t pid;
     pid = fork();
+	pthread_attr attr1;
     if(pid == -1){
         perror("fork error!\n");
         exit(1);
